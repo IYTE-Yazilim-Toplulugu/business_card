@@ -32,7 +32,7 @@ export const members = [
         phone: "+90 553 198 35 75",
 
         image: foto1,
-        coolImage: foto2
+        coolImage: foto1
     },
     {
         url: "dogukantopcu",

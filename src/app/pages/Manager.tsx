@@ -46,20 +46,22 @@ const Manager: React.FC<ManagerProps> = ({ name, surname, title, insta, github, 
         <div className="w-32 mt-32">
           <LogoCanvas />
         </div>
+      </div>
+        <div className="flex flex-col justify-center items-center z-20 px-6 ">
 
-        <div className="flex flex-col items-end justify-end mb-10 z-20 mt-12">
+        <div className="flex flex-col items-center justify-center mb-10 z-20 mt-12">
           <p className="font-bold text-sm ">Tel No:</p>
           <p className="font-extralight text-xl">{phone}</p>
         </div>
 
-        <div className="flex flex-col items-end justify-end mb-10 z-20">
+        <div className="flex flex-col items-center justify-center mb-10 z-20">
           <p className="font-bold text-sm">Bölüm / Sınıf:</p>
           <p className="font-extralight text-sm">{school}</p>
           <p className="font-extralight text-sm">{department}</p>
           <p className="font-extralight text-sm">{grade}</p>
         </div>
 
-        <div className="flex flex-col items-end justify-end mb-10 z-20">
+        <div className="flex flex-col items-center justify-center mb-10 z-20">
           <p className="font-bold text-sm">Emails:</p>
           {
             email.map((e, i) => {
@@ -70,10 +72,10 @@ const Manager: React.FC<ManagerProps> = ({ name, surname, title, insta, github, 
           }
         </div>
 
-        <div className="flex flex-col items-end justify-end mb-10 z-20">
-          <h1 className="font-extrabold text-4xl text-end">{name + " " + surname}</h1>
+        <div className="flex flex-col items-center justify-center mb-10 z-20">
+          <h1 className="font-extrabold text-4xl text-center">{name + " " + surname}</h1>
           <p className="-mt-1 text-sm font-light">{title}</p>
-          <div className="flex justify-end items-end mt-2">
+          <div className="flex justify-center items-center mt-2">
             <a href={insta} className="ml-1"><InstagramIcon /></a>
             <a href={linkedin} className="ml-1"><LinkedInIcon /></a>
             <a href={github} className="ml-1"><GitHubIcon /></a>

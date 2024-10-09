@@ -1,6 +1,7 @@
 //src/components/LogoCanvas.jsx
 
 import React from 'react';
+import Model from "./Iss1";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from '@react-three/drei';
@@ -12,6 +13,7 @@ const LogoCanvas = () => {
             <Canvas>
                 <OrbitControls enableZoom={false} autoRotate maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
                 <ambientLight />
+                <Model />
             </Canvas>
         </div>
     </div>
