@@ -1,7 +1,7 @@
 "use client"
 //src/pages/Manager.jsx
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from 'react';
 
 import LogoCanvas from "../components/LogoCanvas";
@@ -16,8 +16,22 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import RedditIcon from '@mui/icons-material/Reddit';
 
+interface ManagerProps {
+  name: string;
+  surname: string;
+  title: string;
+  insta: string;
+  github: string;
+  linkedin: string;
+  school: string;
+  department: string;
+  grade: string;
+  email: string[];
+  phone: string;
+  coolImage: StaticImageData;
+}
 
-const Manager = ({ name, surname, title, insta, github, linkedin, school, department, grade, email, phone, coolImage }) => {
+const Manager: React.FC<ManagerProps> = ({ name, surname, title, insta, github, linkedin, school, department, grade, email, phone, coolImage }) => {
   useEffect(() => {
     window.scrollTo(0,0);
   }, [])
@@ -27,7 +41,6 @@ const Manager = ({ name, surname, title, insta, github, linkedin, school, depart
       <div className="absolute z-0">
         <Image className="relative z-10 pointer-events-none" src={coolImage} alt={name} />
       </div>
-
 
       <div className="flex flex-col justify-end items-end z-20 px-6 ">
         <div className="w-32 mt-32">

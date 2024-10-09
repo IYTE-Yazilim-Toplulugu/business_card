@@ -1,12 +1,11 @@
 "use client"
 //src/pages/ManagerEng.jsx
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from 'react';
 
 import LogoCanvas from "../components/LogoCanvas";
 import ImageShadow from "../assets/shadow.svg";
-
 
 import CircleLogo from "../assets/circle.png";
 
@@ -17,16 +16,29 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import RedditIcon from '@mui/icons-material/Reddit';
 
+interface ManagerEngProps {
+  name: string;
+  surname: string;
+  title: string;
+  insta: string;
+  github: string;
+  linkedin: string;
+  school: string;
+  department: string;
+  grade: string;
+  email: string[];
+  phone: string;
+  coolImage: StaticImageData;
+}
 
-const ManagerEng = ({ name, surname, title, insta, github, linkedin, school, department, grade, email, phone, coolImage }) => {
+const ManagerEng: React.FC<ManagerEngProps> = ({ name, surname, title, insta, github, linkedin, school, department, grade, email, phone, coolImage }) => {
   return (
     <div className="container mx-auto max-w-md min-h-screen h-full bg-blue-900 text-white pb-10 backGround">
 
       <div className="absolute z-0">
-        <img className="relative z-10" src={coolImage} alt={name} />
+        <Image className="relative z-10" src={coolImage} alt={name} />
         <img className="absolute z-0 top-0" src={ImageShadow} alt='shadow' />
       </div>
-
 
       <div className="flex flex-col justify-end items-end z-20 px-6">
         <div className="w-32 mt-32">

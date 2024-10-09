@@ -31,8 +31,8 @@ const Home = () => {
         </div>
         
         <div className='flex justify-end items-center pt-10 -mt-16 mr-16'>
-    <Image src={BasicLogo} alt="Iztech Software Society Logo" className='h-12' />
-</div>
+    <Image src={BasicLogo} alt="Iztech Software Society Logo" className='h-12 w-auto' />
+    </div>
 
         {
             lang ? (
@@ -49,6 +49,7 @@ const Home = () => {
                 members.map((member, i) => (
                     <div className='cursor-pointer my-2 flex flex-col items-center' key={i} onClick={() => lang ? navigation(`/tr/${member.url}`) : navigation(`/en/${member.url}`) }>
                         <div className='flex justify-center w-5/6 rounded-xl items-center p-1 bg-orange-500'>
+                            <Image src={member.image} alt={member.name} className='rounded-xl' />
                         </div>
                         <div className='flex flex-col justify-center items-center z-20 mt-2'>
                             <h2 className='font-bold text-lg text-center'>{member.name + " " + member.surname}</h2>
