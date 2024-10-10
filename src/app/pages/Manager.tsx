@@ -39,17 +39,17 @@ const Manager: React.FC<ManagerProps> = ({ name, surname, title, insta, github, 
     <div className="container mx-auto max-w-md min-h-screen h-full bg-blue-900 text-white pb-10 backGround">
 
       <div className="absolute z-0">
-        <Image className="relative z-10 pointer-events-none" src={coolImage} alt={name} />
+        <Image className="relative z-10 pointer-events-none w-48 mt-10 left-10 rounded-3xl border-orange-600 border-4" src={coolImage} alt={name} />
       </div>
 
       <div className="flex flex-col justify-end items-end z-20 px-6 ">
-        <div className="w-32 mt-32">
+        <div className="w-32 mt-1">
           <LogoCanvas />
         </div>
       </div>
         <div className="flex flex-col justify-center items-center z-20 px-6 ">
 
-        <div className="flex flex-col items-center justify-center mb-10 z-20 mt-12">
+        <div className="flex flex-col items-center justify-center mb-10 z-20 mt-10">
           <p className="font-bold text-sm ">Tel No:</p>
           <p className="font-extralight text-xl">{phone}</p>
         </div>

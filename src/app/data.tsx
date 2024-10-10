@@ -1,6 +1,7 @@
 
 import foto1 from "./foto1.png";
 import foto2 from "./foto2.png";
+import foto3 from "./foto3.jpeg";
 
 export const members = [
     {
@@ -32,7 +33,7 @@ export const members = [
         phone: "+90 553 198 35 75",
 
         image: foto1,
-        coolImage: foto1
+        coolImage: foto3
     },
     {
         url: "dogukantopcu",
