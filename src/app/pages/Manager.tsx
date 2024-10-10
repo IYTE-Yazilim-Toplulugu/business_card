@@ -74,7 +74,7 @@ const Manager: React.FC<ManagerProps> = ({ name, surname, title, insta, github, 
 
         <div className="flex flex-col items-center justify-center mb-10 z-20">
           <h1 className="font-extrabold text-4xl text-center">{name + " " + surname}</h1>
-          <p className="-mt-1 text-sm font-light">{title}</p>
+          <p className="mt-1 text-sm font-light">{title}</p>
           <div className="flex justify-center items-center mt-2">
             <a href={insta} className="ml-1"><InstagramIcon /></a>
             <a href={linkedin} className="ml-1"><LinkedInIcon /></a>
