@@ -5,7 +5,6 @@ import Image, { StaticImageData } from "next/image";
 import React, { useEffect } from 'react';
 
 import LogoCanvas from "../components/LogoCanvas";
-// import ImageShadow from "../assets/Rectangle 12.svg";
 
 import CircleLogo from "../assets/circle.png";
 
